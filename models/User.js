@@ -3,9 +3,17 @@ const { ObjectId } = mongoose.Schema.Types;
 
 const userSchema = new mongoose.Schema(
   {
-    profileName: {
+    fullName: {
       type: String,
       required: true,
+    },
+    isPrivate:{
+      type: Boolean,
+      required: true
+    },
+    isPublic:{
+      type: Boolean,
+      required: true
     },
     userName: {
       type: String,

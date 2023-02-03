@@ -31,16 +31,16 @@ mongoose.connect(process.env.DB_URL, (error) => {
   if (!error) {
     console.log('connected to mongoDB!');
 
-    // user.save().then(result=>{
-    //     console.log(result)
-    // }).catch(error => console.log(error))
+    user.save().then(result=>{
+        console.log(result)
+    }).catch(error => console.log(error))
 
-    post
-      .save()
-      .then((result) => {
-        console.log(result);
-      })
-      .catch((error) => console.log(error));
+    // post
+    //   .save()
+    //   .then((result) => {
+    //     console.log(result);
+    //   })
+    //   .catch((error) => console.log(error));
   } else {
     console.log('connection to mongoDB failed \n' + error);
   }
