@@ -11,7 +11,7 @@ const userSchema = new mongoose.Schema(
       type: Boolean,
       required: true
     },
-    isPublic:{
+    isVerified:{
       type: Boolean,
       required: true
     },

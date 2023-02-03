@@ -3,8 +3,11 @@ require('dotenv').config();
 mongoose.set('strictQuery', true);
 const Post = require('./models/Post');
 const User = require('./models/User');
+
 const user = new User({
   profileName: 'First Middle Last',
+  isPrivate: true,
+  isVerified: false,
   userName: 'userid/username',
   email: 'mail@gmail.com',
   phoneNumber: '7275648245',
