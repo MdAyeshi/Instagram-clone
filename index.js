@@ -5,12 +5,12 @@ const Post = require('./models/Post');
 const User = require('./models/User');
 
 const user = new User({
-  profileName: 'First Middle Last',
+  fullName: 'First Middle Last',
   isPrivate: true,
   isVerified: false,
-  userName: 'userid/username',
-  email: 'mail@gmail.com',
-  phoneNumber: '7275648245',
+  userName: 'userid/username1',
+  email: 'mail1@gmail.com',
+  phoneNumber: '7275648242',
   password: 'passasdsfsdfsaddf',
   profilePic:
     'https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png',
